@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy Birthday Brother!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .title-font {
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        /* Smooth fade in animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Gentle floating animation */
+        @keyframes gentle-float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .gentle-float {
+            animation: gentle-float 3s ease-in-out infinite;
+        }
+        
+        .gentle-float-delay {
+            animation: gentle-float 3s ease-in-out infinite;
+            animation-delay: 1.5s;
+        }
+        
+        /* Subtle pulse for decorations */
+        @keyframes subtle-pulse {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+        
+        .subtle-pulse {
+            animation: subtle-pulse 2s ease-in-out infinite;
+        }
+        
+        /* Photo frame shadow */
+        .photo-shadow {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25),
+                        0 0 0 1px rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Scroll indicator bounce */
+        @keyframes bounce-gentle {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(8px); }
+        }
+        
+        .bounce-gentle {
+            animation: bounce-gentle 2s ease-in-out infinite;
+        }
+        
+        /* Hide scrollbar but keep functionality */
+        ::-webkit-scrollbar {
+            width: 0;
+            background: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-900">
+    
+    <!-- Section 1: Hero / Birthday Message -->
+    <section class="h-screen w-full flex flex-col items-center justify-center relative overflow-hidden">
+        <!-- Background Gradient -->
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"></div>
+        
+        <!-- Subtle gradient orbs -->
+        <div class="absolute top-20 left-10 w-32 h-32 bg-purple-500/20 rounded-full blur-3xl gentle-float"></div>
+        <div class="absolute bottom-20 right-10 w-40 h-40 bg-pink-500/20 rounded-full blur-3xl gentle-float-delay"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
+        
+        <!-- Content -->
+        <div class="relative z-10 text-center px-6 fade-in">
+            <!-- Decorative stars -->
+            <div class="flex justify-center gap-4 mb-6">
+                <span class="text-2xl gentle-float">✨</span>
+                <span class="text-3xl gentle-float-delay">🎂</span>
+                <span class="text-2xl gentle-float">✨</span>
+            </div>
+            
+            <!-- Main Title -->
+            <h1 class="title-font text-6xl md:text-7xl font-bold bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-300 bg-clip-text text-transparent mb-4">
+                Happy Birthday
+            </h1>
+            
+            <p class="title-font text-4xl md:text-5xl text-white/90 mb-6">
+                Dear Brother!
+            </p>
+            
+            <!-- Subtitle -->
+            <p class="text-white/60 text-lg max-w-md mx-auto mb-10">
+                Celebrating another year of wonderful memories together
+            </p>
+            
+            <!-- Decorative line -->
+            <div class="flex items-center justify-center gap-4 mb-8">
+                <div class="h-px w-16 bg-gradient-to-r from-transparent to-purple-400/50"></div>
+                <span class="text-purple-300/80 text-xl">💖</span>
+                <div class="h-px w-16 bg-gradient-to-l from-transparent to-purple-400/50"></div>
+            </div>
+            
+            <!-- Scroll indicator -->
+            <div class="bounce-gentle">
+                <p class="text-white/40 text-sm mb-2">Scroll to see memories</p>
+                <svg class="w-6 h-6 mx-auto text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Sections - Generated by JS -->
+    <div id="photo-sections"></div>
+
+    <!-- Final Section -->
+    <section class="h-screen w-full flex flex-col items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900"></div>
+        
+        <!-- Gradient orbs -->
+        <div class="absolute top-1/4 left-1/4 w-48 h-48 bg-pink-500/15 rounded-full blur-3xl gentle-float"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-48 h-48 bg-purple-500/15 rounded-full blur-3xl gentle-float-delay"></div>
+        
+        <div class="relative z-10 text-center px-6 fade-in">
+            <div class="flex justify-center gap-3 mb-6">
+                <span class="text-3xl gentle-float">🎉</span>
+                <span class="text-4xl gentle-float-delay">🎁</span>
+                <span class="text-3xl gentle-float">🎉</span>
+            </div>
+            
+            <h2 class="title-font text-5xl md:text-6xl font-bold bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-300 bg-clip-text text-transparent mb-4">
+                Wishing You
+            </h2>
+            
+            <p class="text-2xl text-white/80 mb-2">Happiness & Success</p>
+            <p class="text-xl text-white/60">Today and Always!</p>
+            
+            <div class="mt-10 flex justify-center gap-4">
+                <div class="px-6 py-3 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-white/10">
+                    <span class="text-white/80">With Love ❤️</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+nded-2xl px-8 py-6">
+                    <p class="title-font text-2xl text-white mb-2">Wishing You</p>
+                    <p class="text-yellow-300 text-lg">Happiness, Success & Love!</p>
+                    <div class="flex justify-center gap-4 mt-4 text-3xl">
+                        <span class="float-anim">🎁</span>
+                        <span class="float-anim-delayed">🎈</span>
+                        <span class="float-anim">🎊</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
