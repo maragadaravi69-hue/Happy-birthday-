@@ -1,62 +1,62 @@
 // Photo Gallery Configuration
 const photos = [
     { 
-        src: 'images/7af4f564-e990-4356-ae66-9c51bc825aef-1_all_55063.jpg', 
+        src: '7af4f564-e990-4356-ae66-9c51bc825aef-1_all_55063.jpg', 
         caption: 'Stylish and Confident',
         emoji: '😎'
     },
     { 
-        src: 'images/7af4f564-e990-4356-ae66-9c51bc825aef-1_all_897.jpg', 
+        src: '7af4f564-e990-4356-ae66-9c51bc825aef-1_all_897.jpg', 
         caption: 'Adventures with Friends',
         emoji: '🏔️'
     },
     { 
-        src: 'images/7af4f564-e990-4356-ae66-9c51bc825aef-1_all_926.jpg', 
+        src: '7af4f564-e990-4356-ae66-9c51bc825aef-1_all_926.jpg', 
         caption: 'Temple Memories',
         emoji: '🙏'
     },
     { 
-        src: 'images/7af4f564-e990-4356-ae66-9c51bc825aef-1_all_1011.jpg', 
+        src: '7af4f564-e990-4356-ae66-9c51bc825aef-1_all_1011.jpg', 
         caption: 'Fun Times Together',
         emoji: '🍊'
     },
     { 
-        src: 'images/7af4f564-e990-4356-ae66-9c51bc825aef-1_all_1014.jpg', 
+        src: '7af4f564-e990-4356-ae66-9c51bc825aef-1_all_1014.jpg', 
         caption: 'Brotherhood Forever',
         emoji: '🤝'
     },
     { 
-        src: 'images/7af4f564-e990-4356-ae66-9c51bc825aef-1_all_1038.jpg', 
+        src: '7af4f564-e990-4356-ae66-9c51bc825aef-1_all_1038.jpg', 
         caption: 'Looking Sharp',
         emoji: '✨'
     },
     { 
-        src: 'images/7af4f564-e990-4356-ae66-9c51bc825aef-1_all_1047.jpg', 
+        src: '7af4f564-e990-4356-ae66-9c51bc825aef-1_all_1047.jpg', 
         caption: 'Best Buddies',
         emoji: '👬'
     },
     { 
-        src: 'images/7af4f564-e990-4356-ae66-9c51bc825aef-1_all_1046.jpg', 
+        src: '7af4f564-e990-4356-ae66-9c51bc825aef-1_all_1046.jpg', 
         caption: 'Smiles All Around',
         emoji: '😊'
     },
     { 
-        src: 'images/7af4f564-e990-4356-ae66-9c51bc825aef-1_all_1056.jpg', 
+        src: '7af4f564-e990-4356-ae66-9c51bc825aef-1_all_1056.jpg', 
         caption: 'Good Times',
         emoji: '🌟'
     },
     { 
-        src: 'images/7af4f564-e990-4356-ae66-9c51bc825aef-1_all_1144.jpg', 
+        src: '7af4f564-e990-4356-ae66-9c51bc825aef-1_all_1144.jpg', 
         caption: 'Upside Down Fun',
         emoji: '🙃'
     },
     { 
-        src: 'images/7af4f564-e990-4356-ae66-9c51bc825aef-1_all_1156.jpg', 
+        src: '7af4f564-e990-4356-ae66-9c51bc825aef-1_all_1156.jpg', 
         caption: 'Family Love',
         emoji: '❤️'
     },
     { 
-        src: 'images/7af4f564-e990-4356-ae66-9c51bc825aef-1_all_1157.jpg', 
+        src: '7af4f564-e990-4356-ae66-9c51bc825aef-1_all_1157.jpg', 
         caption: 'Blessed Moments',
         emoji: '🙌'
     }
